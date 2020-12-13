@@ -1,0 +1,13 @@
+.e {
+    white-space: nowrap!important;
+    overflow: hidden!important;
+    text-overflow: ellipsis!important;
+}
+    
+.hand:hover {
+    cursor: pointer;
+}
+
+.f {
+    word-wrap: break-word;
+}

@@ -1,0 +1,32 @@
+<div class="container list-group">
+
+    <h3 class="list-group-item text-left" style="background-color:rgb(44, 62, 80);color:white;">
+
+        <b>Shop Irish</b>
+
+        <span title="Submit your store">
+            <a data-toggle="modal" data-target="#-about" style="color:white; text-decoration:none;">
+                <span class="pull-right"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+            </a>
+        </span>
+    </h3>
+
+    <h2>
+    </h2>
+
+    <form class="list-group-item">
+        <input type="text" class="form-control form-control-block input-lg" name="search" [(ngModel)]="searchKey"
+            placeholder="Search for anything: product, location, keyword" (keyup)="keyPress($event)">
+    </form>
+
+
+
+    <div class="e list-group-item text-left" *ngFor="let item of filteredItems">
+        <img title="{{item.id}}" src="https://www.google.com/s2/favicons?domain={{item.url}}">
+        <span title="{{item.description}}"> {{item.url}}</span>
+        <a href="{{item.url}}" target=blank title="{{item.title}}" class="btn btn-success btn-xm pull-right">
+            <span class="pull-right"><i class="fa fa-link" aria-hidden="true"></i></span>
+        </a>
+    </div>
+
+</div>
